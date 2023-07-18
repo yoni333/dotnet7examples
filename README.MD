@@ -12,4 +12,9 @@
 
 ## ./Controllers/UsersController.cs -- advanced examples how to use [Route] attribute  
 
+## working with mongoDb
+
+official tutorial : https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-7.0&tabs=visual-studio
+
+[link to official tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-7.0&tabs=visual-studio)
 

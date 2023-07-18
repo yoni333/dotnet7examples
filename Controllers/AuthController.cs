@@ -8,14 +8,15 @@ namespace jwt._Controllers
 {
 
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     // [Route("api/v1/{controller}/{id}")]
     public class AuthController : Controller
     {
 
-        [HttpGet]
-        public string Get(int? id , int? id2 ){
-            return "auth id:" + id + " id2: " + id2;
+        [HttpGet("{username}/{password}")]
+        public string Login(string username , string password ){
+            Console.WriteLine("auth username: " + username + " password: " + password);
+            return "";
         }
         
     }
