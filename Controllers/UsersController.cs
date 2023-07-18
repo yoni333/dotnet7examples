@@ -26,6 +26,7 @@ namespace jwt._Controllers
         {
             return "i am users index method";
         }
+        // the [action] token is the method name
         //http://{{host}}/users/index2
         [Route("[controller]/[action]")]
         public string Index2()
