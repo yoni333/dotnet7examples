@@ -14,10 +14,7 @@ namespace jwt._Controllers
     {
 
         [HttpGet]
-        // [Route("api/v1/s/{id2?}")]
         public string Get(int? id , int? id2 ){
-            ;
-
             return "auth id:" + id + " id2: " + id2;
         }
         
