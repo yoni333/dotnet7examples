@@ -10,7 +10,13 @@ namespace jwt._Controllers
         public int? Order => 2;  //learn more about order of url match values : -1 , 0 , 1 , 2
         public string Name { get; set; } = string.Empty;
     }
+    /*
+    Route attribute ara concatenating. so if you will uncomment the next 2 attributes
+    you will need to add /my-app/ to all of your request url's here
+    [ApiController]
+    [Route("[my-app]")]
 
+    */
     public class UsersController : Controller
     {
 
