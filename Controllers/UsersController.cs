@@ -17,6 +17,8 @@ namespace jwt._Controllers
     [Route("[my-app]")]
 
     */
+    [Route("my-app")]
+    [ApiController]
     public class UsersController : Controller
     {
 
@@ -74,21 +76,21 @@ namespace jwt._Controllers
 
         public string Index6multi(int id)
         {
-            return "i am users index 6 or 6a or home,  method id:" + id ;
+            return "i am users index 6 or 6a or home,  method id:" + id;
         }
         //custom attribute
         //http://{{host}}/api/users/2
         [MyApiController]
         public string Index7(int id)
         {
-            return "i am users index 7 with custom attribute,  method id:" + id ;
+            return "i am users index 7 with custom attribute,  method id:" + id;
         }
         //constrain string length -- see more at https://learn.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-7.0#route-template-referenc
         //http://{{host}}/api/users/2
         [Route("[controller]/[action]/{id:maxlength(8)}")]
         public string Index8(string id)
         {
-            return "i am users index 8 with type var,  method id:" + id ;
+            return "i am users index 8 with type var,  method id:" + id;
         }
         // http attribute are just Route attribute extension and accept the same options
         [HttpGet("[controller]/[action]/{id}")]
@@ -96,11 +98,39 @@ namespace jwt._Controllers
         {
             return "i am users index 9 with HTTP REST verb GET,  method id:" + id;
         }
-        
+        // and also all HTTP verbs POST ,PUt , DELETE etc...
         [HttpPost("[controller]/[action]/{id}")]
         public string Index10(string id)
         {
             return "i am users index 10 with HTTP REST verb POST,  method id:" + id;
+        }
+        //template the uri
+        [Route("page{a}/{id}")]
+        public string Index11(string id, string a)
+        {
+            return "i am users index 11 id:" + id + " parameter - a is : " + a;
+        }
+        // the root sign ignore the controller route
+        //http://{{host}}/
+        [Route("/")]
+        public string Index12()
+        {
+            return "i am users index 12 , if you will uncomment the class route attribute you will see \n i ignore it";
+        }
+
+        // the sign ""  do noting .  just inherit the controller class route.
+        //http://{{host}}/my-app
+        [Route("")]
+        public string Index13()
+        {
+            return "i am users index 12 , if you will uncomment the class route attribute you will see \n i inherit it";
+        }
+        //The tilde (~) in the route template overrides the route prefix in the RoutePrefix attribute.
+        // it is same as "/"
+        [Route("~/m2")]
+        public string Index14()
+        {
+            return "i am users index 14 , if you will uncomment the class route attribute you will see \n i inherit it";
         }
 
     }
