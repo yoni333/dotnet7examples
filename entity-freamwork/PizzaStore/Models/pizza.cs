@@ -1,3 +1,4 @@
+// example for in memory db and mysqllite db
 using Microsoft.EntityFrameworkCore;
 
 namespace PizzaStore.Models
