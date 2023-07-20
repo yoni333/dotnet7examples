@@ -6,6 +6,7 @@ namespace jwt._Controllers
 {
     public class MyApiControllerAttribute : Attribute, IRouteTemplateProvider
     {
+        //the [controller] token take the class name and remove the sofix "Controller"
         public string Template => "api/[controller]/{id}";
         public int? Order => 2;  //learn more about order of url match values : -1 , 0 , 1 , 2
         public string Name { get; set; } = string.Empty;
