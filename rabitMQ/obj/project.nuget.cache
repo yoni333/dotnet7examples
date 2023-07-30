@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "RDLzGxXpPbrYxf3TSWT2d4416MTZE4CzWxfF5StVqSZX1rOUMhuRfJPDx/dUg+XfsDgVo1Niw2f/qYkMWr/WyA==",
+  "success": true,
+  "projectFilePath": "C:\\code\\csharp\\dotnet7examples\\rabitMQ\\rabitMQ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\yehonatan-laptop\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
