@@ -9,7 +9,7 @@ public class WeatherForecastController : ControllerBase
 
     public MssqlCalls _mssqlCalls;
 
-    public WeatherForecastController(MssqlCalls mssqlCalls) => _mssqlCalls = mssqlCalls;
+    public MsSqlController(MssqlCalls mssqlCalls) => _mssqlCalls = mssqlCalls;
 
     [HttpGet(Name = "GetWeatherForecast")]
    

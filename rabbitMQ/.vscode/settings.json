@@ -1,0 +1,3 @@
+{
+  "dotnet.defaultSolution": "server-api-rabitMQ/client-rabbit-api/rabitMQ.sln"
+}
